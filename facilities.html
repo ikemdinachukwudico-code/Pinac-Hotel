@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facilities | Pinec Hotel</title>
+<meta name="description" content="Pinec Hotel — comfortable rooms, restaurant and event hall. Book online in minutes.">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo">Pinec <span>Hotel</span></a>
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="">Home</a></li><li><a href="rooms.html" class="">Rooms</a></li><li><a href="restaurant.html" class="">Restaurant</a></li><li><a href="events.html" class="">Hall</a></li><li><a href="gallery.html" class="">Gallery</a></li><li><a href="about.html" class="">About</a></li><li><a href="contact.html" class="">Contact</a></li>
+      <li><a href="book.html" class="nav-cta">BOOK NOW</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<section>
+  <div class="container">
+    <div class="center">
+      <p class="eyebrow">Facilities &amp; Services</p>
+      <h2 class="section-title">Everything You Need, 24/7</h2>
+      <p class="lead">A standard hotel is measured by its departments. Ours run around the clock.</p>
+    </div>
+    <div class="grid grid-3" style="margin-top:40px">
+      <div class="dept"><div class="ic">🛎️</div><h3>Front Office / Reception</h3><p>24-hour check-in and check-out, reservations, concierge and guest support — day and night.</p></div>
+      <div class="dept"><div class="ic">🧹</div><h3>Housekeeping</h3><p>Daily room cleaning, fresh linen and towels, and turndown service on request.</p></div>
+      <div class="dept"><div class="ic">🍽️</div><h3>Food &amp; Beverage</h3><p>Full kitchen, restaurant, bar and room service until 9pm. Local and continental menu.</p></div>
+      <div class="dept"><div class="ic">🛡️</div><h3>Security</h3><p>CCTV surveillance, trained guards, gated entry and secure on-site parking for all guests.</p></div>
+      <div class="dept"><div class="ic">⚡</div><h3>Power &amp; Maintenance</h3><p>24-hour electricity with generator backup and inverter. You will never sit in the dark.</p></div>
+      <div class="dept"><div class="ic">🧺</div><h3>Laundry Services</h3><p>Same-day wash, dry and iron. Express service available for travellers in a hurry.</p></div>
+      <div class="dept"><div class="ic">💬</div><h3>Guest Relations</h3><p>A dedicated team for complaints, special requests and anything you need during your stay.</p></div>
+      <div class="dept"><div class="ic">🚗</div><h3>Parking &amp; Transport</h3><p>Free secure parking, plus airport pickup and town-drop arrangements on request.</p></div>
+      <div class="dept"><div class="ic">📶</div><h3>Free WiFi Everywhere</h3><p>High-speed internet in all rooms, the restaurant and the event hall.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-band"><div class="container">
+  <h2 class="section-title">Experience It Yourself</h2>
+  <p class="lead" style="margin:0 auto 24px">One night at Pinec and you'll understand why guests keep coming back.</p>
+  <a href="book.html" class="btn btn-gold">Book Your Stay</a>
+</div></section>
+
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Pinec Hotel</h4>
+        <p>Your home of comfort in Ekeoha. Standard rooms, fine dining and a fully equipped event hall — with 24-hour power and security.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="rooms.html">Rooms & Rates</a></li>
+          <li><a href="restaurant.html">Restaurant & Bar</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="events.html">Event Hall</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><a href="book.html">Book a Room</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="about.html#policies">Hotel Policies</a></li>
+          <li><a href="about.html#faqs">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+2348164717982">+234 800 000 0000</a></li>
+          <li><a href="https://wa.me/2348164717982">WhatsApp Us</a></li>
+          <li><a href="mailto:bookings@pinechotel.com">bookings@pinechotel.com</a></li>
+          <li>Ekeoha, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Pinec Hotel. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/2348164717982" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#06281a"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.6.8 5 2.3 7L4 29l7.2-2.2c1.9 1 4 1.6 6.1 1.6h.5c6.6-.3 11.9-5.9 11.6-12.8C28.6 8.4 22.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-2.3-.1-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.1-6.1-5.4-.2-.2-1.4-1.9-1.4-3.7s.9-2.6 1.3-3c.3-.3.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.2-.2.4-.4.6l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.8.4.2.6.2.8-.1.2-.2.9-1 1.1-1.4.2-.4.5-.3.8-.2.3.1 2.1 1 2.5 1.2.4.2.6.3.7.5.1.1.1 1-.2 1.9z"/></svg>
+</a>
+
+<script src="js/main.js"></script>
+<script src="js/firebase-config.js"></script>
+
+</body>
+</html>
